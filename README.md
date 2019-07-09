@@ -3,6 +3,15 @@ A desktop software that applies the topics studied in class.
 The main idea is that the final user can select which algorithm 
 he/she wants to apply to an image, shown in the UI.
 
+# Con Docker
+
+```
+docker build --rm -f "Dockerfile" -t project_images:latest .
+
+docker run -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix project_images
+```
+
+
 ```
 sudo apt-get install python3
 sudo apt-get install python3-pip
