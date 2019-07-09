@@ -10,7 +10,7 @@ docker build --rm -f "Dockerfile" -t project_images:latest .
 
 docker run -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix project_images
 ```
-
+# Sin Docker
 
 ```
 sudo apt-get install python3
